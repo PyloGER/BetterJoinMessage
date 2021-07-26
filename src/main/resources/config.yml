@@ -1,2 +1,11 @@
 config:
-  message: 'hat den Server betreten'
+
+  prefix: '&8[&b&lSystem&8]'
+  suffix: '&8[&a&l %Online% &8]'
+
+  joinactivate: true
+  firstjoin: '&a&l %Player% &7is &d&lNEW &7on the Server&8.'
+  joinmessage: '&a&l %Player% &7has &a&ljoined &7the Server&8.'
+
+  quitactivate: true
+  quitmessage: '&a&l %Player% &7has &c&lleft &7the Server&8.'
