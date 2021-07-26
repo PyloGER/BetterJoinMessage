@@ -1,2 +1,2 @@
-config:
-  message: '&b [Player] §7hat den Server betreten!'
+Config:
+  message: 'hat den Server betreten'
