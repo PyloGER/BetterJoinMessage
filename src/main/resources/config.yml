@@ -1,11 +1,35 @@
 config:
 
-  prefix: '&8[&b&lSystem&8]'
-  suffix: '&8[&a&l %Online% &8]'
+  ###############################################################################
 
+  #Public join message
   joinactivate: true
+
+  prefixjoin: '&8[&b&lSystem&8]'
+  suffixjoin: '&8[&a&l %Online% &8]'
   firstjoin: '&a&l %Player% &7is &d&lNEW &7on the Server&8.'
   joinmessage: '&a&l %Player% &7has &a&ljoined &7the Server&8.'
 
+###############################################################################
+
+  #Private join message
+  pmactivate: true
+
+  prefixpm: '&8[&b&lSystem&8]'
+  suffixpm: '&8[&a&l %Online% &8]'
+  firstpm: '&a&l %Player% &7you are &d&lNEW &7on the Server&8.'
+  privatemsg: '&7Hey &6%Player% &7welcome'
+
+###############################################################################
+
+  #Quit message
   quitactivate: true
+
+  prefixquit: '&8[&b&lSystem&8]'
+  suffixquit: '&8[&a&l %Online% &8]'
   quitmessage: '&a&l %Player% &7has &c&lleft &7the Server&8.'
+
+###############################################################################
+
+  #Use %Player% to get the name from the Player
+  #Use %Online% to get the number of Online Player
