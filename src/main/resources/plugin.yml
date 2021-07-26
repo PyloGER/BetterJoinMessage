@@ -1,6 +1,6 @@
 name: PyloGER
 version: ${project.version}
-main: de.pyloger.bettejoinmessage.PyloGER
+main: de.pyloger.betterjoinmessage.PyloGER
 api-version: 1.17
 authors: [ PyloGER ]
 website: UtopiaGER.de
