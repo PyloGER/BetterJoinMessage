@@ -21,8 +21,7 @@ public final class PyloGER extends JavaPlugin implements Listener {
         // Plugin shutdown logic
     }
     public void loadConfig() {
-        getConfig().options().copyDefaults(true);
-        saveConfig();
+        saveDefaultConfig();
     }
 
     @EventHandler
