@@ -18,7 +18,7 @@ config:
   prefixpm: '&8[&b&lSystem&8]'
   suffixpm: '&8[&a&l %Online% &8]'
   firstpm: '&a&l %Player% &7you are &d&lNEW &7on the Server&8.'
-  privatemsg: '&7Hey &6%Player% &7welcome'
+  privatemsg: '&7 Hey &6%Player% &7welcome'
 
 ###############################################################################
 

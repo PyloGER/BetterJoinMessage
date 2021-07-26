@@ -65,7 +65,7 @@ public final class PyloGER extends JavaPlugin implements Listener {
                 if (message1 != null) {
                     message1 = message1.replace("%Player%", player.getName());
                     message1 = message1.replace("%Online%", String.valueOf(online));
-                    event.setJoinMessage(ChatColor.translateAlternateColorCodes('&', prefix + "§f " + message1 + "§f " + suffix));
+                    event.setJoinMessage(ChatColor.translateAlternateColorCodes('&', prefix + message1 + suffix));
                 }
 
             } else {
@@ -73,7 +73,7 @@ public final class PyloGER extends JavaPlugin implements Listener {
                 if (message != null) {
                     message = message.replace("%Player%", player.getName());
                     message = message.replace("%Online%", String.valueOf(online));
-                    event.setJoinMessage(ChatColor.translateAlternateColorCodes('&', prefix + "§f " + message + "§f " + suffix));
+                    event.setJoinMessage(ChatColor.translateAlternateColorCodes('&', prefix + message + suffix));
                 }
             }
         }
@@ -87,13 +87,13 @@ public final class PyloGER extends JavaPlugin implements Listener {
                     message2 = message2.replace("%Player%", player.getName());
                     message2 = message2.replace("%Online%", String.valueOf(online));
                     player.sendMessage(ChatColor.translateAlternateColorCodes('&', prefix2 + message2 + suffix2));
-                } else {
-                    String message3 = getConfig().getString("config.firstpm");
-                    if (message3 != null) {
-                        message3 = message3.replace("%Player%", player.getName());
-                        message3 = message3.replace("%Online%", String.valueOf(online));
-                        player.sendMessage(ChatColor.translateAlternateColorCodes('&', prefix2 + message3 + suffix2));
-                    }
+                }
+            } else {
+                String message3 = getConfig().getString("config.firstpm");
+                if (message3 != null) {
+                    message3 = message3.replace("%Player%", player.getName());
+                    message3 = message3.replace("%Online%", String.valueOf(online));
+                    player.sendMessage(ChatColor.translateAlternateColorCodes('&', prefix2 + message3 + suffix2));
                 }
             }
         }
