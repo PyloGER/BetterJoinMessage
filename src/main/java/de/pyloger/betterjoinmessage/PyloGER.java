@@ -37,6 +37,8 @@ public final class PyloGER extends JavaPlugin implements Listener {
         Player player = event.getPlayer();
 
         int online = Bukkit.getOnlinePlayers().size();
+        String prefix = getConfig().getString("config.prefix");
+        String suffix = getConfig().getString("config.suffix");
 
         if(player.hasPlayedBefore()) {
             if (getConfig().getBoolean("config.joinactivated", true)) {
@@ -59,6 +61,9 @@ public final class PyloGER extends JavaPlugin implements Listener {
         Player player = event.getPlayer();
 
         int online = Bukkit.getOnlinePlayers().size()-1;
+        String prefix = getConfig().getString("config.prefix");
+        String suffix = getConfig().getString("config.suffix");
+
         if (getConfig().getBoolean("config.quitactivated", true)) {
         String message = getConfig().getString("config.quitmessage");
         message = message.replace("%Player%", player.getName());
